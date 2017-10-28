@@ -105,5 +105,7 @@ MyController
  [x] Handle return zero when no input
 ```
 
+## 覆蓋率
 
+--coverage-text
 
