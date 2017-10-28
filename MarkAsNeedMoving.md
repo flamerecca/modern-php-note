@@ -35,9 +35,28 @@ class ApiController extends Controller
 在 laravel 裡面，網址是隨著Route設定而改變的，所以不用擔心多拆成幾個物件會對網址有什麼改變。
 
 ```php
-Route::get('/api/forStoringAlpha', 'StorageAlphaController@store');
-Route::get('/api/forStoringBeta', 'StorageBetaController@store');
-Route::get('/api/forStoringGamma', 'StorageGammaController@store');
+Route::get('/api/StoringAlpha', 'StorageAlphaController@store');
+Route::get('/api/StoringBeta', 'StorageBetaController@store');
+Route::get('/api/StoringGamma', 'StorageGammaController@store');
+Route::get('/api/StoringDelta', 'StorageDeltaController@store');
+Route::get('/api/StoringEpsilon', 'StorageEpsilonController@store');
+```
+
+Yii2 裡面，預設網址是`Controller/actionFunction` 的形式。這也是很容易就把上面所說的`forStoring[???]` 全部寫進 `ApiController` 的原因。
+
+其實我們一樣可以透過設定 Route ，來讓我們的controller 變小：
+
+```php
+'urlManager' => [
+    //...
+    'rules' => [
+        'api/StoringAlpha' => 'StorageAlphaController/store',
+        'api/StoringBeta' => 'StorageBetaController/store',
+        'api/StoringGamma' => 'StorageGammaController/store',
+        'api/StoringDelta' => 'StorageDeltaController/store',
+        'api/StoringEpsilon' => 'StorageEpsilonController/store',
+    ],
+]
 ```
 
 ## 物件太小？
