@@ -6,50 +6,29 @@
 
 ## 註解函式
 
-
-
 ```php
 class ApiController extends Controller
 {
-    
-    public function workHour()
-    {
-    }
-    
-    public function salary()
-    {
-    }
 
-    public function isOverwork()
-    {
-    }
+    public function getWorkHour(){/*...*/}
 
-    public function getFinance()
-    {
-    }
+    public function getSalary(){/*...*/}
 
-    public function getFinance()
-    {
-    }
+    public function markWorkerIsOverwork(){/*...*/}
 
-    public function getFinance()
-    {
-    }
+    public function bookName(){/*...*/}
 
-    public function getFinance()
-    {
-    }
+    public function bookPrice(){/*...*/}
 
-    public function getFinance()
-    {
-    }
+    public function setBookName(){/*...*/}
 
+    public function getFinance(){/*...*/}
+
+    public function getFinance(){/*...*/}
     //......
 
 }
 ```
-
-
 
 ## 網址問題
 
@@ -65,7 +44,6 @@ Route::get('/api/forStoringGamma', 'StorageGammaController@store');
 
 拆解過程中，有時候會讓人擔心，一個物件如果只有一個函式，那豈不是過度重構了？
 
-所以我自己使用先註解起來的方式，顯露出明顯的壞味道。當壞味道累積夠多，我們可以很簡單的從註解找出類似的函式，並放在同一個物件底下。
-
-
+所以我自己使用先註解起來的方式，顯露出明顯的壞味道。  
+當壞味道累積夠多，我們可以很簡單的從註解裡，找出夠多類似的函式，並放在同一個物件底下。
 
