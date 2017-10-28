@@ -107,5 +107,9 @@ MyController
 
 ## 覆蓋率
 
---coverage-text
+使用 --coverage-text 來檢查自己的測試覆蓋率是否夠高
+
+注意測試覆蓋率不應該作為一種標準，而是應該作為一種建議。
+
+
 
