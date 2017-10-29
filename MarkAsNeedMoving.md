@@ -22,13 +22,52 @@ class ApiController extends Controller
 
     public function setBookName(){/*...*/}
 
-    public function getFinance(){/*...*/}
+    public function getFinance1(){/*...*/}
 
-    public function getFinance(){/*...*/}
+    public function getFinance2(){/*...*/}
     //......
 
 }
 ```
+
+這個類別不僅函式功能很雜亂，而且有的函式命名還很不清楚，比方說 `getFinance1()` 和 `getFinance2()`
+
+### 註解
+
+首先，我們先把這些函式裡面的內容看懂，並下註解
+
+```php
+class ApiController extends Controller
+{
+    //輸入員工號碼取得工作時間
+    //TODO 
+    public function getWorkHour(){/*...*/}
+
+    public function getSalary(){/*...*/}
+
+    public function markWorkerIsOverwork(){/*...*/}
+
+    public function bookName(){/*...*/}
+
+    public function bookPrice(){/*...*/}
+
+    public function setBookName(){/*...*/}
+
+    public function getFinance1(){/*...*/}
+
+    public function getFinance2(){/*...*/}
+    //......
+
+}
+```
+
+### 改變註解
+
+隨著時間過去，我們可能發現之前的判斷是錯誤的。比方說，突然發現`getFinance2()` 其實是用來
+
+### 為什麼是用註解？
+
+
 
 ## 網址問題
 
