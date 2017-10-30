@@ -39,36 +39,43 @@ class ApiController extends Controller
 ```php
 class ApiController extends Controller
 {
-    
-    //TODO 輸入員工號碼取得工作時間 跟員工相關
+    //輸入員工號碼取得工作時間 跟員工相關
+    //TODO 移動到 WorkerController
     public function getWorkHour(){/*...*/}
-    
-    //TODO 輸入員工號碼取得薪資 跟員工相關
+
+    //輸入員工號碼取得薪資 跟員工相關
+    //TODO 移動到 WorkerController
     public function getSalary(){/*...*/}
-    
-    //TODO 輸入員工號碼取得該員工是否超時工作 跟員工相關
+
+    //輸入員工號碼取得該員工是否超時工作 跟員工相關
+    //TODO 移動到 WorkerController
     public function markWorkerIsOverwork(){/*...*/}
-    
-    //TODO 輸入書本號碼取得書本名稱 跟書本相關
+
+    //輸入書本號碼取得書本名稱 跟書本相關
+    //TODO 移動到 BookController
     public function bookName(){/*...*/}
-    
-    //TODO 輸入書本號碼取得書本價格 跟書本相關
+
+    //輸入書本號碼取得書本價格 跟書本相關
+    //TODO 移動到 BookController
     public function bookPrice(){/*...*/}
-    
-    //TODO 修改書本名稱
+
+    //修改書本名稱
+    //TODO 移動到 BookController
     public function setBookName(){/*...*/}
 
-    //TODO 輸入部門號碼取得該部門最近收入 應該改名為getSectionIncome()之類的？
+    //輸入部門號碼取得該部門最近收入
+    //TODO 應該改名為getSectionIncome()之類的？
     public function getFinance1(){/*...*/}
 
-    //TODO 看不太懂，可能和部門支出有關
+    //看不太懂，可能和部門支出有關
+    //TODO 應該改名為getSectionIncome()之類的？
     public function getFinance2(){/*...*/}
     //......
 
 }
 ```
 
-然後我們又可以擺著了。
+然後，我們又可以擺著了。
 
 等到有一天，我們需要清理 TODO 註解時，我們又回頭來看看這一段再做什麼。發現大量不同功能的函式被放在一起。這時候就可以新開類別來放相近的函式了。
 
