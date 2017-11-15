@@ -6,6 +6,8 @@
 * [露出壞味道](/showBadSmell.md)
   * [函式內加入單行註解](/commentIntentionally.md)
   * [註解函式為需要移動](/MarkAsNeedMoving.md)
+* [CI 簡介](/CI.md)
+* [CD 簡介](/CD.md)
 
 
 
